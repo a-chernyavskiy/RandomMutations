@@ -1,6 +1,16 @@
-# Progress visualization parameters
+"""
+Miscellanous functions for console output
+
+Author: Andrey Chernyavskiy
+E-mail: andrey.chernyavskiy@gmail.com
+License: GPL-3.0
+"""
+
+
+
 import time
 
+# Progress visualization parameters
 disp_progress_type = 'Sharp'  # 'Progress' - progress bar, 'Status' - status line, 'Sharps' - sharps progress bar
 progress_update_time = 0.00001  # inner status update frequency (in seconds)
 
