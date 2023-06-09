@@ -5,7 +5,7 @@ Before using the library, please read the [terms of use](#terms-of-use).
 
 ## Getting started
 
-###Installation
+### Installation
 To install the package download the files and run
 ```commandline
 python setup.py install
@@ -15,7 +15,7 @@ or without downloading
 pip install git+https://github.com/a-chernyavskit/randmut.git
 ```
 
-###Simple usage example
+### Simple usage example
 ```python
 import math
 from randmut import randmut
@@ -34,7 +34,7 @@ Minimization is carried out by calling the `runmut` function.
 
 
 
-####Main parameters of `randmut`:
+#### Main parameters of `randmut`:
 * `fun` - function to minimize
 * `bounds` - a list of tuples setting bounds of variables; 
 * `n_pop` - population size; linearly increases computation time, increases the probability of finding the global minimum
@@ -45,25 +45,25 @@ The parameter `n_pop` is the main hyperparameter of the algorithm. Increase it a
 
 Bounds can be set like `3 * [(0, 1)]`. Also, `std_bounds(n, r)` can be used, which is equivalent to `n * [(-r, r)]`.
 
-####Termination
+#### Termination
 * `eps` - precision of "non-changing" iteration (default: `1e-6`)
 * `n_stall` - number of "non-changing" (<`eps`) iterations to stop
 * `max_iter` - maximal number of iterations
 
-####Return value
+#### Return value
 Function `ranmut` returns a named tuple of the type `ResultRM = namedtuple("ResultRM", "x f steps")`:
 * `x` - found point
 * `f` - found value
 * `steps` - detailed information about algorithm steps
 
-####Output
+#### Output
 * `disp`- print output iterations information or not (default: `True`)
 * `multiline` - multiline or single-line regime of displaying iterations info (default: `True`)
 
-####Callback
+#### Callback
 * `callback` - function, which is called after ever iteration (default:`None`); see an [example](examples/callback.ipynb)
 
-####Additional parameters:
+#### Additional parameters:
 * `x0` - initial point (default: `None`) 
 * `scale` - scale of the algorithm (default: `1.0`)
 * `p_min` - minimal magnitude of mutations (default: `-10`)
