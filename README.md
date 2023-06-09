@@ -34,7 +34,7 @@ Minimization is carried out by calling the `runmut` function.
 
 
 
-#### Main parameters of `randmut`:
+#### Main parameters of `randmut`
 * `fun` - function to minimize
 * `bounds` - a list of tuples setting bounds of variables; 
 * `n_pop` - population size; linearly increases computation time, increases the probability of finding the global minimum
@@ -45,23 +45,26 @@ The parameter `n_pop` is the main hyperparameter of the algorithm. Increase it a
 
 Bounds can be set like `3 * [(0, 1)]`. Also, `std_bounds(n, r)` can be used, which is equivalent to `n * [(-r, r)]`.
 
-#### Termination
+#### Termination parameters
 * `eps` - precision of "non-changing" iteration (default: `1e-6`)
 * `n_stall` - number of "non-changing" (<`eps`) iterations to stop
 * `max_iter` - maximal number of iterations
+
+
+#### Console output parameters
+* `disp`- print output iterations information or not (default: `True`)
+* `multiline` - multiline or single-line regime of displaying iterations info (default: `True`)
+
+#### Callback
+* `callback` - function, which is called after ever iteration (default:`None`); see an [example](examples/callback.ipynb)
 
 #### Return value
 Function `ranmut` returns a named tuple of the type `ResultRM = namedtuple("ResultRM", "x f steps")`:
 * `x` - found point
 * `f` - found value
 * `steps` - detailed information about algorithm steps
-
-#### Output
-* `disp`- print output iterations information or not (default: `True`)
-* `multiline` - multiline or single-line regime of displaying iterations info (default: `True`)
-
-#### Callback
-* `callback` - function, which is called after ever iteration (default:`None`); see an [example](examples/callback.ipynb)
+<br />
+<br />
 
 #### Additional parameters:
 * `x0` - initial point (default: `None`) 
