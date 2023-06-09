@@ -12,7 +12,7 @@ python setup.py install
 ```
 or without downloading
 ```commandline
-pip install git+https://github.com/a-chernyavskit/randmut.git
+pip install git+https://github.com/a-chernyavskiy/randmut.git
 ```
 
 ### Simple usage example
