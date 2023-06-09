@@ -14,7 +14,7 @@ setup(
     description="Random mutations global optimization algorithm",
     license="GPL-3.0",
     keywords="optimization, global optimization, evolutionary algorithms",
-    url="https://github.com/a-chernyavskiy/randmut",
+    url="https://github.com/a-chernyavskiy/RandomMutations",
     packages=["randmut"],
     long_description=read("README.md"),
     install_requires=["numpy", "pytest"]

@@ -1,8 +1,11 @@
 # RandMut
 Random mutations evolutionary optimization algorithm (https://arxiv.org/abs/1304.3703)
 
-Before using the library, please read the [terms of use](#terms-of-use).
+For using the library in research work, please cite as:
+> [1] Chernyavskiy A. Yu., Calculation of quantum discord and entanglement measures using the random mutations optimization algorithm, arXiv:1304.3703 [quant-ph], 2013.  
+> [2] Chernyavskiy A. Yu., Random mutations global optimization solver for Python, URL: https://github.com/a-chernyavskiy/RandomMutations
 
+Matlab version is available at https://github.com/PQCLab/RandomMutations
 ## Getting started
 
 ### Installation
@@ -12,7 +15,7 @@ python setup.py install
 ```
 or without downloading
 ```commandline
-pip install git+https://github.com/a-chernyavskiy/randmut.git
+pip install git+https://github.com/a-chernyavskiy/RandomMutations.git
 ```
 
 ### Simple usage example
@@ -83,9 +86,6 @@ The parameters`scale` and `x0` can be used together in a following scenario: fin
 
 
 
-## License
+## Licence
 All code found in this repository is licensed under GPL v3.
 
-For using the library in research work, please cite as:
-> [1] Chernyavskiy A. Yu., Calculation of quantum discord and entanglement measures using the random mutations optimization algorithm, arXiv:1304.3703 [quant-ph], 2013.  
-> [2] Chernyavskiy A. Yu., Global optimization solver for MATLAB, URL: https://github.com/PQCLab/RandomMutations
